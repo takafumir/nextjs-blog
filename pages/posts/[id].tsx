@@ -23,6 +23,7 @@ export default function Post({ postData }) {
 }
 
 export const getStaticProps: GetStaticProps = async context => {
+  const { params } = context;
   const postData = await getPostData(params.id)
   return {
     props: {
