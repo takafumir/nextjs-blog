@@ -36,6 +36,7 @@ export default function Home( {allPostsData} ) {
           ))}
         </ul>
       </section>
+      {console.log(allPostsData)}
     </Layout>
   )
 }
